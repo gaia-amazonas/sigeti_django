@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geovisor de la plataforma SIGETI">
+    <meta name="author" content="Fundación GAIA Amazonas">
+    <title> Geovisor</title>
+    <link rel="icon" href="../media/sigeti.logoico.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/categorizedlayers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://rawgit.com/MarcChasse/leaflet.ScaleFactor/master/leaflet.scalefactor.min.css">
+    <link rel="stylesheet" href="../css/Control.MiniMap.min.css">
+    <script src="../layers/territorios.js"></script>
+    <script src="../layers/comunidades.js"></script>
+    <script src="../layers/SitiosSagradosMacroterritorio_0.js"></script>
+    <script src="../layers/rios.js"></script>
+    <script src="../layers/resguardos.js"></script>
+    <script src="../layers/runap.js"></script>
+    <script src="../layers/aatis.js"></script>
+    <script src="../layers/departamentos.js"></script>
+    <script src="../layers/limiteAmazonas.js"></script>
+    <script src="../layers/municipiosNo.js"></script>
+    <script src="../layers/paises.js"></script>
+    <script src="../js/scripts/categorizedlayers.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="geovisor__header__h1"> GEOVISOR - SIGETI</h1>
+        <div class="geovisor__container__select__location">
+            <label for="select-location">
+                <h3>¡Viaja por los territorios!</h3>
+            </label>
+            <select name="select-location" id="select-location">
+                <option value="">Seleccione un Territorio:</option>
+                <option value="2.323,-69.152">Alto Río Guaínia</option>
+                <option value="-2.026,-71.786">Arica</option>
+                <option value="2.104,-67.489">Bajo Río Guainía</option>
+                <option value="-2.741,-70.053">CIMTAR</option>
+                <option value="3.38,-67.719">Atabapo-Inírida</option>
+                <option value="1.914,-69.902">Ríos Isana y Surubí</option>
+                <option value="-0.598,-70.307">Yaigojé Apaporis</option>
+                <option value="-1.738,-70">Bajo Río Caquetá - Amazonas</option>
+                <option value="-1.323,-71.304">PANÍ</option>
+                <option value="0.082,-70.463">Pirá Paraná</option>
+                <option value="0.25,-70.217">Río Tiquié</option>
+                <option value="2.474,-68.26">Medio Río Guainía</option>
+                <option value="-0.761,-70.916">Mirití Paraná</option>
+                <option value="-3.191,-69.814">UITIBOC</option>
+            </select>
+        </div>
+    </header>
+    <section>
+        
+        <div>
+            <div id="map" class="map"> </div>
+        </div>
+    </section>
+    <footer>
+        <img src="../media/Cenefas/CT_HORI_COMPL_C.png" alt="Cenefa pie de página" style="width: 100%;">
+    </footer>
+    <script src="https://npmcdn.com/jquery@3.0.0/dist/jquery.min.js"></script>
+    <script src="https://rawgit.com/MarcChasse/leaflet.ScaleFactor/master/leaflet.scalefactor.min.js"></script>
+    <script src="../js/Controles/lista_territorios.js"></script>
+    <script src="../js/Controles/Control.MiniMap.min.js"></script>
+    <script src="../js/Controles/leaflet.browser.print.js"></script>
+    <script src="../js/scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <img id="miImagen" src="http://support.yumpu.com/en/wp-content/themes/qaengine/img/default-thumbnail.jpg">
+    <select id="miSelect">
+        <option value="http://support.yumpu.com/en/wp-content/themes/qaengine/img/default-thumbnail.jpg" selected>Sin
+            imagen</option>
+        <option value="https://pbs.twimg.com/profile_images/723561620761391104/BQmg7aTz_400x400.jpg">Imagen 1</option>
+        <option value="http://www.clker.com/cliparts/v/N/K/k/N/3/number-2-design-md.png">Imagen 2</option>
+    </select>
+
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <!-- Add 2 buttons -->
+    <button onclick="update(data1)">Variable 1</button>
+    <button onclick="update(data2)">Variable 2</button>
+
+    <!-- Create a div where the graph will take place -->
+    <div id="my_dataviz"></div>
+
+    <script src="../js/scripts/pruebas.js"></script>
+    <script src="../js/charts/poblacionMacroterritorio.js"></script>
+</body>
+
+</html>
+
+ <!--<table>
+            <tr>
+                <td align=right>Territorio:</td>
+                <td align=left colspan=3>
+                     Añadido onchange para cargar los pueblos 
+                    <select name="lisTerritorios" id="lisTerritorios" onchange="cargarComunidades();">
+                        <option value="">Seleccione un territorio:</option>
+                    </select>
+                </td>
+                <td align=right>Comunidad:</td>
+                <td align=left colspan=3>
+                    <select name="lisComunidades" id="lisComunidades">
+                        <option value="">Seleccione una comunidad</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>-->

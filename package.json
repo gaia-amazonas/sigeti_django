@@ -1,0 +1,14 @@
+{
+  "name": "sigeti",
+  "version": "1.0.0",
+  "description": "Desarrollo y aplicación de SIGETI",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brayan Pardo",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/bigquery-connection": "^3.0.1"
+  }
+}

@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Raleway-Light', sans-serif;
+    src: url(../media/fonts/Raleway-Light.ttf);
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(159, 178, 87);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    background-image: url("../media/paper_texture_09.png");
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header h1 {
+    padding: 0.5em;
+    color: rgb(59, 96, 55);
+}
+
+.index__div__titulo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1em;
+}
+.index__section{
+    margin: 1em;
+    border: 2px dashed goldenrod;
+    padding: 1em;
+}
+.index__header__nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    padding: 0.5em;
+    background-color: rgb(190, 209, 130);
+}
+
+.index__div__ul {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.geovisor__header__h1{
+    margin: 0;
+}
+.geovisor__container__select__location{
+    display:inline-flex;
+    align-items: center;
+    width: 99%;
+    padding-left: 1em;
+    background-color: rgb(190, 209, 130);
+    color: rgb(59, 96, 55);
+    margin: 0;
+}
+.territorios__header__div {
+    background-color: rgb(105, 188, 196);
+    color: rgb(28, 61, 83);
+}
+
+.territorios__body {
+    background-image: url("../media/paper_texture_09.png");
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.territorio_section {
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.territorio_section_button {
+    background-color: rgb(105, 188, 196);
+    size: auto;
+    font-size: 1em;
+    color: black;
+    border-radius: 200em;
+    height: 3em;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 1em;
+}
+
+.territorios__body__div__img {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.miriti__main {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5em;
+}
+
+.miriti__main__section__div {
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.miriti__main__section__img {
+    width: 70%;
+}
+
+.clearfix {
+    clear: both;
+    height: 1em;
+}
+
+.map {
+    width: 100%;
+    height: 80vh;
+    position: static;
+    z-index: 1;
+    padding: 0;
+    position: static;
+}
+
+.map_apaporis {
+    width: 75%;
+    min-height: 500px;
+    height: 80vh;
+    border: solid goldenrod;
+    margin: 0% auto;
+    float: right;
+}
+.map__2 {
+    width: 70%;
+    min-height: 500px;
+    height: 80vh;
+    border: solid gold;
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+}
+
+.apaporis__main {
+    align-items: self-start;
+}
+
+.apaporis__main__div {
+    align-content: space-around;
+}
+
+.apaporis__main__div__aside {
+    width: 22%;
+    height: 80vh;
+    background-color: whitesmoke;
+    border: solid goldenrod;
+    padding-left: 2em;
+    float: left;
+}
+.container-select-location{
+    padding: 1em;
+}
+.monitoreo__iframe {
+    height: 80vh;
+}
+
+.leaflet-popup-content-wrapper {
+    background-image: url(../media/paper_texture_01.png);
+    width: 350px;
+    max-height: 350px;
+    overflow-y: scroll;
+    height: auto;
+    border-radius: 1em;
+    padding: 5px;
+}
+
+.leaflet-popup-content {
+    width: 90%;
+    height: 90%;
+    /*background-color: rgb(105, 188, 196);*/
+    background-image: url(../media/paper_texture_01.png);
+    /*border: 2px solid rgb(60 131 140);*/
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5em;
+    padding: 0.5rem;
+}
+
+#close {
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding: 5px;
+    position: fixed bottom;
+    float: right;
+    z-index: 5;
+}
+
+.modal_container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    float: right;
+    pointer-events: none;
+    border-radius: 5px;
+    opacity: 0;
+    width: 25%;
+    height: 80vh;
+    z-index: 3;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    width: 98%;
+    height: 78vh;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px;
+    text-align: center;
+    justify-content: right;
+    overflow: scroll;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 0.5rem;
+}

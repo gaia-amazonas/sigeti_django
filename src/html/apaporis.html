@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Apaporis </title>
+    <link rel="icon" href="../media/sigeti.logoico.ico">
+    <style>
+        @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+    </style>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
+        </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&display=swap" rel="stylesheet">
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="https://bigqueryconnection.googleapis.com/$discovery/rest?version=v1"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://rawgit.com/MarcChasse/leaflet.ScaleFactor/master/leaflet.scalefactor.min.css">
+    <link rel="stylesheet" href="../css/Control.MiniMap.min.css">
+    <script src="../layers/territorios.js"></script>
+    <script src="../layers/comunidades2.js"></script>
+    <script src="../layers/rios.js"></script>
+    <script src="../layers/resguardos.js"></script>
+    <script src="../layers/runap.js"></script>
+    <script src="../layers/aatis.js"></script>
+    <script src="../layers/departamentos.js"></script>
+    <script src="../layers/limiteAmazonas.js"></script>
+    <script src="../layers/municipiosNo.js"></script>
+    <script src="../layers/paises.js"></script>
+    <script src="../layers/SitiosSagradosMacroterritorio_0.js"></script>
+</head>
+
+<body>
+    <header id="titulo">
+        <h1>Territorio Indígena Yaigojé Apaporis</h1>
+    </header>
+    <main class="apaporis__main">
+        <article>
+            <p>El funcionamiento del Territorio Indígena Yaigojé Apaporis como una Entidad Territorial, es un propósito
+                colectivo de nuestros pueblos, por el cual hemos venido trabajando de manera continua por más de 30
+                años.</p>
+        </article>
+        <div class="apaporis__main__div">
+        <aside class="apaporis__main__div__aside">
+            <div class="container-select-location">
+                <label for="select-location"><strong>¡Viaja por las comunidades!</strong></label>
+                <select name="select-location" id="select-location">
+                    <option value="">Seleccione una Comunidad:</option>
+                    <option value="-0.83116395199989601,-70.255008459999985">Agua Blanca</option>
+                    <option value="-0.61306142899993299,-70.739827516999952">Awaurita</option>
+                    <option value="-0.726334047,-70.262595714999989">Bellavista</option>
+                    <option value="-1.1011010800000149,-69.473167567999951">Bocas del Taraira</option>
+                    <option value="-0.94382203000001197,-69.945054269999972">Bocas del Uga</option>
+                    <option value="-0.44615632427907098,-70.229170272736354">Bocas del Pirá</option>
+                    <option value="-0.97567492913857501,-70.203574298758525">Campo Alegre</option>
+                    <option value="-0.94232687899993695,-70.082944">Caño Laurel</option>
+                    <option value="-1.060484971999935, -70.237919440000013">Centro Providencia</option>
+                    <option value="-0.042665790999967,-70.961569688999973">Union Jirijirimo</option>
+                    <option value="-0.367507,-70.811521">La Playa</option>
+                    <option value="-0.61476545399996996,-70.189886514999998">Hotaweya</option>
+                    <option value="-1.182771666999942,-69.555610415999993">Puerto Ñumi</option>
+                    <option value="-0.427012353209269,-70.295265438676765">Paromena</option>
+                    <option value="-1.1206836609998929,-70.170300633999929">Puerto Cedro</option>
+                    <option value="-0.55861740099996604,-70.3275504">Puerto Cordillera</option>
+                    <option value="-1.0110851789999751,-70.140356631999936">Puerto Curupira</option>
+                    <option value="-0.357981804999978,-70.557093015000007">Puerto Sabana</option>
+                    <option value="-1.062156000980796,-70.102735248613925">Puerto Solano</option>
+                    <option value="-0.80078930101911205,-69.583424742252035">Santa Clara</option>
+                    <option value="-1.034619681999986,-69.81093784200003">Vista Hermosa</option>
+                    <option value="-0.16067580729730199,-70.909192539360944">Siruya</option>
+                </select>
+            </div>
+            <canvas class="apaporis__canvas"></canvas>
+        </aside>
+        <div class="modal_container" id="modal_container">
+            <div class="modal" id="modal"></div>
+            <button id="close">X</button>
+        </div>
+        <div id="map_apaporis" class="map_apaporis"></div>
+    </div>
+    </main>
+    <footer>
+        <img src="../media/MP_HORIZONTAL_C.png" alt="Cenefa pie de página" style="width: 100%;">
+    </footer>
+
+    <script src="https://npmcdn.com/jquery@3.0.0/dist/jquery.min.js"></script>
+    <script src="https://rawgit.com/MarcChasse/leaflet.ScaleFactor/master/leaflet.scalefactor.min.js"></script>
+    <script src="../js/Controles/lista_territorios.js"></script>
+    <script src="../js/Controles/Control.MiniMap.min.js"></script>
+    <script src="../js/Controles/leaflet.browser.print.js"></script>
+    <script src="../js/BigQuery/conteos_generales_por_territorio.js"></script>
+    <script src="../js/charts/poblacionMacroterritorio.js"></script>
+    <script src="../js/scripts/apaporis.js"></script>
+    
+</body>
+
+</html>

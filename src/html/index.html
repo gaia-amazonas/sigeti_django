@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGETI</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../media/sigeti.logoico.ico">
+    <style>
+        @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="index__body">
+    <main>
+        <header class="index__header">
+            <div class="index__div__titulo">
+                <img src="../media/LOGO_SIGETI_verde-14.png" alt="Logo Sigeti" height="80em">
+                <h1>Sistema de Información para la Gestión Territorial Indígena - SIGETI</h1>
+            </div>
+            <nav class="index__header__nav">
+                <a href="geovisor.html" alt="Logo Geovisor">Geovisor</a>
+                <a href="macroterritorios.html" alt="Territorios">Macroterritorio</a>
+                <a href="monitoreo.html">Monitoreo Comunitario</a>
+                <a href="biomas.html">Biomas Amazónico</a>
+                <a href="financiadores.html">Indicadores</a>
+            </nav>
+        </header>
+
+        <section class="index__section">
+            <h2>¿Qué es SIGETI?</h2>
+            <p>Es una herramienta para la toma de decisiones, el posicionamiento, la comunicación, gestión, coordinación
+                dentro y fuera del territorio partiendo de la información territorial para el ejercicio de gobierno de
+                la ETI </p>
+            <!--<div class="fotografias"><img src="../media//Fotografías/Archivo26.jpg" alt="Fotografía inicio" width="100%">-->
+            <p>La construcción e implementación del SIGETI dotaría de acceso a información clara, pertinente, suficiente
+                y oportuna a las ETI y sus gobiernos, logrando el desarrollo de, al menos, estos cuatro puntos.
+            <ul class="index__div__ul">
+                <li><img src="../media/Iconos/Consejo_amarillo.png" alt="Icono Consejo"
+                        title="Facilitar la orientación de las acciones del gobierno de los Consejos Indígenas."
+                        width="35%">
+                </li>
+                <li><img src="../media/Iconos/maloca_blanco.png" alt="Icono Maloca"
+                        title="Dotar de soporte la toma de decisiones frente a las políticas territoriales."
+                        width="35%">
+                </li>
+                <li><img src="../media/Iconos/Lectura_rojo.png" alt="Icono Lectura"
+                        title="Permitir un análisis y evaluación de la información en la garantía efectiva del diálogo intercultural de las instituciones públicas nacionales y regionales."
+                        width="35%">
+                </li>
+                <li><img src="../media/Iconos/conectividad_Verde.png" alt="Icono Conectividad"
+                        title="Facilitar la sistematización de información para implementar herramientas útiles para las comunidades indígenas."
+                        width="35%">
+                </li>
+            </ul>
+            </p>
+            <article>
+                <p>La iniciativa SIGETI, se está desarrollando en un esquema por fases; cada fase se articula bajo un
+                    modelo general permitiendo que, de manera incremental, se avance en el desarrollo del sistema en dos
+                    vías, los procesos de avance temático de conceptualización y el desarrollo de herramientas
+                    informáticas. <br>
+                    En este sentido, los componentes del SIGETI se irán definiendo con el tiempo, con la participación
+                    de los pueblos indígenas, como usuario principal de Sistema, y serán desarrollados en tanto existan
+                    estas claridades.
+                </p>
+            </article>
+            <article>
+                <h3>Roles del sistema</h3>
+                <dl>
+                    <dt><b>Administrador SIG</b></dt>
+                    <dd>Administra el SIGETI. Tiene acceso a todas las funcionalidades e información del sistema.
+                        Realiza:
+                        <li>la gestión de usuarios y privilegios</li>
+                        <li>El registro y publicación de capas base, temáticas y de indicadores.</li>
+                        <li>la parametrización de escenarios de visualización y consulta.</li>
+                        <li>Y demás tareas de actualización y mantenimiento del SIGETI.</li>
+                    </dd>
+                    <dt><b>Gestor de datos</b></dt>
+                    <dd><b>Gestores de datos temáticos (Asesores e Indígenas):</b>
+                        Realizan la captura en campo de la información requerida para la construcción de la línea
+                        base territorial (variables temáticas del SIGETI) y el cálculo de los indicadores. <br>
+                        <b>Gestores de datos técnicos (Equipo SIG-SIGETI):</b> Realizan la:
+                        <li>Estructuración y estandarización de datos secundarios,</li>
+                        <li>El desarrollo de modelos para la automatización de indicadores,</li>
+                        <li>El procesamiento e implementación de modelos para el cálculo de indicadores</li>
+                        <li>El reporte de datos finales.</li>
+                    </dd>
+                    <dt><b>Usuario común con credenciales</b></dt>
+                    <dd>Usuario que SI cuenta con credenciales de autenticación en el SIGETI, tiene permisos de
+                        consulta, visualización y descarga de la información pública y restringida.</dd>
+                    <dt><b>Usuario común anónimo</b></dt>
+                    <dd>Usuario que NO cuenta con credenciales de autenticación en el SIGETI, tiene permisos de consulta
+                        y visualización de la información pública.</dd>
+                </dl>
+            </article>
+        </section>
+
+        <div class="clearfix"> </div>
+
+        <footer>
+            <img src="../media/Cenefas/CT_HORI_COMPL_C.png" alt="Cenefa footer" style="width: 100%;">
+        </footer>
+    </main>
+</body>
+
+</html>
