@@ -28,17 +28,27 @@ header h1 {
     color: rgb(59, 96, 55);
 }
 
+.index__body{
+    font-size: 1.2em;
+}
+
 .index__div__titulo {
     display: flex;
     justify-content: left;
     align-items: center;
     padding-left: 1em;
 }
-.index__section{
+
+.index__section {
     margin: 1em;
     border: 2px dashed goldenrod;
     padding: 1em;
 }
+.index__section__img{
+    display: flex;
+    justify-content: center;
+}
+
 .index__header__nav {
     display: flex;
     justify-content: space-around;
@@ -53,13 +63,14 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
 }
-.geovisor__header__h1{
+
+.geovisor__header__h1 {
     margin: 0;
 }
-.geovisor__container__select__location{
-    display:inline-flex;
+
+.geovisor__container__select__location {
+    display: inline-flex;
     align-items: center;
     width: 99%;
     padding-left: 1em;
@@ -67,6 +78,22 @@ header h1 {
     color: rgb(59, 96, 55);
     margin: 0;
 }
+
+.macro__canvas {
+    width: 100vh;
+    display: flex;
+    align-content: center;
+    margin: 1em;
+    border: 1px;
+    border-color: rgb(190, 209, 130);
+}
+
+.macro__canva__graficos {
+    display: flex;
+    border: 1px;
+    border-color: rgb(190, 209, 130);
+}
+
 .territorios__header__div {
     background-color: rgb(105, 188, 196);
     color: rgb(28, 61, 83);
@@ -100,6 +127,7 @@ header h1 {
     margin: 1em;
 }
 
+
 .miriti__main {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.5em;
@@ -115,6 +143,10 @@ header h1 {
     width: 70%;
 }
 
+.pira__section__img{
+    display: flex;
+    justify-content: space-around;
+}
 .clearfix {
     clear: both;
     height: 1em;
@@ -137,6 +169,7 @@ header h1 {
     margin: 0% auto;
     float: right;
 }
+
 .map__2 {
     width: 70%;
     min-height: 500px;
@@ -149,6 +182,7 @@ header h1 {
 
 .apaporis__main {
     align-items: self-start;
+    font-size: 1.1em;
 }
 
 .apaporis__main__div {
@@ -163,18 +197,28 @@ header h1 {
     padding-left: 2em;
     float: left;
 }
-.container-select-location{
+
+.container-select-location {
     padding: 1em;
+}
+.monitoreo__main{
+    display:flex;
+    justify-content: center;
+    font-size: 1.2em;
 }
 .monitoreo__iframe {
     height: 80vh;
 }
 
+.monitoreo__img__chagra {
+    display: inline;
+    justify-self: center;
+}
+
 .leaflet-popup-content-wrapper {
     background-image: url(../media/paper_texture_01.png);
-    width: 350px;
-    max-height: 350px;
-    overflow-y: scroll;
+    width: 100%;
+    max-height: 400px;
     height: auto;
     border-radius: 1em;
     padding: 5px;

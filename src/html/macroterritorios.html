@@ -10,9 +10,11 @@
     <style>
         @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
     </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&display=swap" rel="stylesheet">
+    <script src="../layers/comunidades.js"></script>
 </head>
 
 <body class="territorios__body">
@@ -21,22 +23,33 @@
             <h1 id="Territorios">Macroterritorio de Jaguares de Yuruparí</h1>
         </div>
     </header>
-
-    <section class="territorio_section">
-        <button class="territorio_section_button"> <a href="apaporis.html"><b>Territorio Yaigojé
-                    Apaporis</b></a></button>
-        <button class="territorio_section_button"> <a href="miriti.html"><b>Territorio Mirití Paraná</b></a></button>
-        <button class="territorio_section_button"> <a href="pira.html"><b>Territorio Pira Paraná</b></a></button>
-        <button class="territorio_section_button"> <a href="tiquie.html"><b>Territorio del Río Tiquié</b></a></button>
-    </section>
-    <div class="territorios__body__div__img">
-        <img src="../media/Macroterritorio/JYUR_CT_20230626_MacroterritorioJaguaresYurupari.png"
-            alt="Mapa Macroterritorio" style="width: 45%">
-
-    </div>
+    <main>
+        
+        <section class="territorio_section">
+            <button class="territorio_section_button"> <a href="apaporis.html"><b>Territorio Yaigojé
+                        Apaporis</b></a></button>
+            <button class="territorio_section_button"> <a href="miriti.html"><b>Territorio Mirití
+                        Paraná</b></a></button>
+            <button class="territorio_section_button"> <a href="pira.html"><b>Territorio Pira Paraná</b></a></button>
+            <button class="territorio_section_button"> <a href="tiquie.html"><b>Territorio del Río
+                        Tiquié</b></a></button>
+        </section>
+        <div class="macro__canvas">
+            <canvas id="canvaP-macro" class="macro__canva__graficos"></canvas>
+           <!-- <br>
+            <canvas id="canvaHM-macro" class="macro__canvas__graficos"></canvas>-->
+        </div>
+        
+        <div class="territorios__body__div__img">
+            <img src="../media/Macroterritorio/JYUR_CT_20230626_MacroterritorioJaguaresYurupari.png"
+                alt="Mapa Macroterritorio" style="width: 45%">
+        </div>
+    </main>
     <footer>
         <img src="../media/CT_HORI_COMPL_B.png" alt="Cenefa" style="width: 100%">
     </footer>
+    <script src="../js/BigQuery/conteos_generales_por_territorio.js"></script>
+    <script src="../js/charts/ConteoTerritorios.js"></script>
 </body>
 
 </html>

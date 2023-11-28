@@ -6,35 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/scripts/jquery-3.7.1.min.js"></script>
+    <script src="../layers/comunidades.js"></script>
 </head>
 
 <body>
-    <img id="miImagen" src="http://support.yumpu.com/en/wp-content/themes/qaengine/img/default-thumbnail.jpg">
-    <select id="miSelect">
-        <option value="http://support.yumpu.com/en/wp-content/themes/qaengine/img/default-thumbnail.jpg" selected>Sin
-            imagen</option>
-        <option value="https://pbs.twimg.com/profile_images/723561620761391104/BQmg7aTz_400x400.jpg">Imagen 1</option>
-        <option value="http://www.clker.com/cliparts/v/N/K/k/N/3/number-2-design-md.png">Imagen 2</option>
+   <!--<button onclick="window.open('descarga.html')">Descargar archivo de cambios</button>
+    <br>
+    <br>-->
+    <button onclick="location.reload()">Nueva consulta</button>
+    <br>
+    <br>
+    <label for="territoriosDropdown">Territorios:</label>
+    <select id="territoriosDropdown">
+        <!-- Las opciones se generarán aquí -->
     </select>
+    
+    <label for="comunidadesDropdown">Comunidades:</label>
+    <select id="comunidadesDropdown">
+        <!-- Las opciones se generarán aquí -->
+    </select>
+    <table id="familias">
+        <!-- Tabla de familias se generará aquí -->
+    </table>
+    </div>
+    
+    <br>
 
+    <!--<a id='agrega-familia' style="display: none;">Agregar Familia</a>-->
+    <script src="../js/scripts/listaDesplegable.js"></script>
 
-    <!-- Load d3.js -->
-    <script src="https://d3js.org/d3.v4.js"></script>
-
-    <!-- Add 2 buttons -->
-    <button onclick="update(data1)">Variable 1</button>
-    <button onclick="update(data2)">Variable 2</button>
-
-    <!-- Create a div where the graph will take place -->
-    <div id="my_dataviz"></div>
-
-    <script src="../js/scripts/pruebas.js"></script>
-    <script src="../js/charts/poblacionMacroterritorio.js"></script>
 </body>
 
 </html>
 
- <!--<table>
+<!--<table>
             <tr>
                 <td align=right>Territorio:</td>
                 <td align=left colspan=3>
